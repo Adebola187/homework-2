@@ -1,0 +1,27 @@
+{{ block title }}
+    Results
+    {{ if subsession.round_number == C.NUM_ROUNDS }}
+
+{{endif}}
+{{ endblock }}
+
+{{ block content }}
+<p>
+    Round {{participant.selected_round }} was randomly selected for payment.
+
+</p>
+
+<p> You selected Lottery{{ player.choice_in_round }}</p>
+
+<p>
+    You have won {{reward}} points
+</p>
+
+
+<p>
+    Thank you for your time!
+</p>
+
+{{ endblock }}
+
+
